@@ -1,6 +1,32 @@
-function reloadPage() {
-    window.location.reload();
-}
+// if (window.localStorage.getItem('menustate') === null) {
+//     setMenu('pageOne');
+//     pageOne.style.border = "solid red 5px";
+// } else {
+//     var menuItem = readMenu()
+//     document.getElementById(menuItem).style.border = "solid green 5px"
+// }
+
+// function setMenu(clickedOn) {
+//     clearMenus();
+//     window.localStorage.setItem('menustate', clickedOn);
+//     document.getElementById(clickedOn).style.border = "solid green 5px"
+
+// }
+
+// function readMenu() {
+//     return window.localStorage.getItem('menustate');
+// }
+
+
+// function doMenu(clickedElement) {
+//     setMenu(clickedElement);
+//     document.getElementById(clickedElement).focus();
+// }
+
+
+// function reloadPage() {
+//     window.location.reload();
+// }
 
 
 
@@ -15,6 +41,8 @@ function pageOne() {
     let btn3 = document.querySelector("#btn3")
     let btn4 = document.querySelector("#btn4")
     let btn5 = document.querySelector("#btn5")
+
+    createItem('lastClicked', 'pageOne')
 
 
     if (pageOne.style.display === "none") {
@@ -60,6 +88,8 @@ function pageTwo() {
     let btn4 = document.querySelector("#btn4")
     let btn5 = document.querySelector("#btn5")
 
+    createItem('lastClicked', 'pageTwo')
+
     if (pageTwo.style.display === "none") {
         // page toggle
         pageOne.style.display = "none"
@@ -104,6 +134,8 @@ function pageThree() {
     let btn4 = document.querySelector("#btn4")
     let btn5 = document.querySelector("#btn5")
 
+    createItem('lastClicked', 'pageThree')
+
     if (pageThree.style.display === "none") {
         // page toggle
         pageOne.style.display = "none"
@@ -146,6 +178,8 @@ function pageFour() {
     let btn3 = document.querySelector("#btn3")
     let btn4 = document.querySelector("#btn4")
     let btn5 = document.querySelector("#btn5")
+
+    createItem('lastClicked', 'pageFour')
 
     if (pageFour.style.display === "none") {
         // page toggle 
@@ -190,6 +224,8 @@ function pageFive() {
     let btn4 = document.querySelector("#btn4")
     let btn5 = document.querySelector("#btn5")
 
+    createItem('lastClicked', 'pageFive')
+
     if (pageFour.style.display === "none") {
         // page toggle 
         pageOne.style.display = "none"
@@ -220,3 +256,18 @@ function pageFive() {
 
     }
 }
+
+
+function createItem(a, b) {
+    localStorage.setItem(a, b);
+}
+
+
+function getValue() {
+    return localStorage.getItem('lastClicked');
+
+}
+
+var memory = getValue()
+console.log(memory + " Memory")
+window[memory]()
