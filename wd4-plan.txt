@@ -1,0 +1,20 @@
+work on content last / design 
+
+work on functionality first 
+
+to do: 
+
+Add function on the FORM page so when you click the donate button a small window pops up for 3seconds that says thank you for your donation 
+
+add js that lets you cycle thru different pages when you click the back button in the browser 
+
+add some styles / animations to the side nav buttons 
+
+
+svg horizontal line / icon / seperator 
+
+svg LOGO w 3 basic shapes 
+
+add a form & list that shows 
+
+

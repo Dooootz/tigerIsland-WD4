@@ -1,0 +1,33 @@
+// WD4 notes
+
+PART A:
+
+#4 container elements with unique ids 
+#Menu system that shows single container while hiding the others 
+#Styles in the menu that highlight which page the user is currently viewing 
+#layout for desktop and mobile as per wireframe 
+
+
+
+
+PART B:
+#Layout technique using BOOTSTRAP 
+Override framework defualts of 3 class of elements 
+#Override framework defaults for overall layout at least once 
+#At least 4 container elements with 3 hidden by default
+Override framework animation class  in one significant way ?  
+
+
+
+PART C:
+
+Use SVG & HTML for...
+Element seperators as SVG html elements 
+A custom SVG icon in HTML overlaying at least three basic shapes 
+
+
+PART D:
+
+Validation HTML & CSS 
+Correct indentation on html , css, js 
+

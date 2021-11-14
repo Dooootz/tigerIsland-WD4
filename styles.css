@@ -1,0 +1,263 @@
+:root {
+    --primary-color: #E73C3C;
+    --second-color: #F3B700;
+    --third-color: #57467B;
+    --fourth-color: #6a7062;
+    --light-color: #F3FCF0;
+    --light-color: #c4ffb0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+/* top nav styles */
+
+.navbar-collapse {
+    transition: ease-in-out all .7s;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+}
+
+#btn1,
+#btn2,
+#btn3,
+#btn4,
+#btn5 {
+    width: 180px;
+}
+
+@media (max-width:1200px) {
+
+    #btn1,
+    #btn2,
+    #btn3,
+    #btn4,
+    #btn5 {
+        width: 100px;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+
+
+}
+
+#btn1 {
+    background-color: white;
+    transition: all ease-in-out 0.2s;
+    border: solid 1px hsl(28, 83%, 61%);
+}
+
+#btn2 {
+    background-color: white;
+    transition: all ease-in-out 0.2s;
+    border: solid 1px hsl(28, 83%, 61%);
+}
+
+#btn3 {
+    background-color: white;
+    transition: all ease-in-out 0.2s;
+    border: solid 1px hsl(28, 83%, 61%);
+}
+
+#btn4 {
+    background-color: white;
+    transition: all ease-in-out 0.2s;
+    border: solid 1px hsl(28, 83%, 61%);
+}
+
+#btn5 {
+    background-color: white;
+    transition: all ease-in-out 0.2s;
+    border: solid 1px hsl(28, 83%, 61%);
+}
+
+#btn1:hover,
+#btn2:hover,
+#btn3:hover,
+#btn4:hover,
+#btn5:hover {
+    box-shadow: 3px 3px #ffb977;
+    transform: scale(1.1);
+}
+
+
+/*  side nav styles */
+
+.bi {
+    color: white;
+}
+
+.bi:hover {
+    color: red;
+}
+
+.bi:active {
+    color: red;
+}
+
+
+/* page styles */
+
+@media (max-width:768px) {}
+
+.page-content {
+    height: 400px;
+}
+
+#page-1 {
+    display: block;
+}
+
+#page-2 {
+    display: none;
+    height: 100%;
+}
+
+#page-3 {
+    display: none;
+    height: 100%;
+}
+
+#page-4 {
+    display: none;
+}
+
+#page-5 {
+    display: none;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+/* page 1  */
+
+.home-bg-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.donate-form {
+    width: 75%;
+}
+
+/* abouts us  */
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-text {
+    color: #d4d4d4;
+}
+
+#page-2>p {
+    color: #d4d4d4;
+}
+
+.card-icon {
+    height: 100px;
+    width: 100px;
+}
+
+/* gallery */
+
+
+.gallery {
+    margin: auto;
+    border: rgb(0, 0, 0) solid 10px;
+    background: rgb(0, 0, 0);
+}
+
+/* mak images fill their container*/
+.img-gallery {
+    max-width: 100%;
+    opacity: 0.8;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.img-gallery:hover {
+    opacity: 1;
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+/* CSS Grid*/
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+}
+
+/* Media Query for changing grid on bigger screens*/
+
+/* Bigger than Phones(tablet) */
+@media only screen and (min-width: 750px) {
+    .img-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Bigger than Phones(laptop / desktop) */
+@media only screen and (min-width: 970px) {
+    .img-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .donate-form {
+        width: 90%;
+    }
+
+
+}
+
+
+
+/* supporters */
+
+.donaters {
+    margin-bottom: 5px;
+    padding: 25px;
+}
+
+.donaters>h3:hover {
+    color: #fa0000;
+}
+
+
+.donaters>h6,
+p {
+    color: #a1a1a1;
+    transition: 0.1s;
+}
+
+
+
+
+
+
+/* background-image: url(images/tiger-home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh; */
